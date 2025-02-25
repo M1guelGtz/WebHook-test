@@ -15,6 +15,7 @@ func PullRequestEvent(ctx *gin.Context) {
 
 	log.Println(signature)
 
+	log.Println("recibido")
 	log.Printf("Webhook recibido: \nEvento=%s, \nDeliveryID=%s", eventType, deliveryID)
 
 	payload, err := ctx.GetRawData()
